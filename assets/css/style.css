@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Utility class */
+.flex {
+  display: flex;
+}
+body {
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family:'Roboto', sans-serif;
+  line-height: 1.65;
+  outline: currentcolor none medium;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+#top_navbar {
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background: transparent none repeat scroll 0% 0%;
+  padding: 2.5rem 0px;
+}
+
+.wrap_bar {
+  max-width: 86rem;
+  margin: 0px auto;
+  padding: 0px 3rem;
+}
+
+.flex_container {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.logo_revolut {
+  vertical-align: middle;
+}
+
+.menu_navbar {
+  width: 100%;
+  color: rgb(25, 28, 31);
+  align-items: center;
+  position: relative;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_left>a {
+  color: #191c1f;
+  font-family:'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  line-height: 48px;
+  padding: 0px 1.2rem;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: color 0.1s ease 0s, opacity 0.1s ease 0s;
+}
+#area_personal {
+  font-weight: 500;
+}
+
+.sub_menu {
+  display: none;  /* block */
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
+  rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  padding: 1.5rem 0.75rem 0.75rem 0.5rem;
+}
+.sub_menu_wrap.conto {
+  width: calc(100% / 4);
+  flex-direction: column;
+}
+
+#sub_menu_header {
+  height: fit-content;
+  margin-bottom: 0.75rem;
+  padding: 0px 1.2rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-content: center;
+  color: rgb(206, 213, 219);
+}
+
+.title_icon {
+  height: 24px;
+  margin-right: 0.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(206, 213, 219);
+  border-radius: 50%;
+}
+
+.svg-inline--fa.fa-w-16,
+.svg-inline--fa.fa-w-18 {
+  width: 24px;
+  padding: 4px;
+}
+
+li >a{
+  min-width: 10rem;
+  color: rgb(139, 149, 158);
+  white-space: nowrap;
+  line-height: 3rem;
+  padding: 0px 1.2rem;
+  transition: color 0.2s ease 0s;
+}
+
+a:hover,
+section>h3:hover {
+  opacity: 1;
+}
+section > h3 {
+  cursor: pointer;
+  color: inherit;
+  font-weight: 300;
+  opacity: 0.5;
+  transition: color 0.1s ease 0s, opacity 0.1s ease 0s;
+  line-height: 3rem;
+  padding: 0px 1.2rem;
+}
+#funz .sub_menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.investimenti_risparmi li>a>span:nth-child(1) {
+  opacity: 0.2;
+  color: rgb(25, 28, 31);
+}
+span.up_text {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 11px;
+  color: rgb(6, 102, 235);
+  top: -1em;
+  bottom: 1rem;
+  line-height: normal;
+  margin-right: -0.8rem;
+  letter-spacing: 0.04em;
+}
+
+#abbonamenti, #chi_siamo, #aiuto {
+  position: relative;
+}
+
+.button_box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+
+.button_access, .download_app {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  border: medium none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: -0.025em;
+  margin-right: 1rem;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  transition: all 0.2s ease 0s;
+}
+
+.button_access {
+  color: rgb(25, 28, 31);
+  background-color: rgba(25, 28, 31, 0.08);
+  padding: 0.625em 1.5em;
+}
+.button_access:hover {
+  background-color: rgba(25, 28, 31, 0.16);
+}
+
+.download_app {
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 28, 31);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.download_app:hover {
+  background-color: rgba(25, 28, 31, 0.84);
+}
