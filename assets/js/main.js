@@ -10,9 +10,11 @@ $(function () {
     }    
   );
 
-  /* $("section.dropdown_menu").on("click",
+  /* $("section.dropdown_menu h3").on("click",
     function() {
-        $(this).children("section.sub_menu").stop(true,false,true,false).fadeToggle(300);
+      $(this).parent().siblings().find("section.sub_menu").fadeOut(300);
+      $(this).next("section.sub_menu").stop(true, false, true).fadeToggle(300);
+      return false;
     }    
   ); */
 });
